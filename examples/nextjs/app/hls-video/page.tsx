@@ -22,7 +22,7 @@ export default async function Page(props: PageProps) {
         <Player
           as={HlsVideo}
           className="video"
-          src="https://stream.mux.com/Sc89iWAyNkhJ3P1rQ02nrEdCFTnfT01CZ2KmaEcxXfB008.m3u8"
+          src="https://randmons2fds.b-cdn.net/media/playlist.m3u8"
           poster="https://image.mux.com/Sc89iWAyNkhJ3P1rQ02nrEdCFTnfT01CZ2KmaEcxXfB008/thumbnail.webp?time=13"
           controls
           crossOrigin=""
@@ -32,12 +32,7 @@ export default async function Page(props: PageProps) {
           preload={params?.preload as 'auto' | 'metadata' | 'none'}
           suppressHydrationWarning
         >
-          <track
-            label="thumbnails"
-            default
-            kind="metadata"
-            src="https://image.mux.com/Sc89iWAyNkhJ3P1rQ02nrEdCFTnfT01CZ2KmaEcxXfB008/storyboard.vtt"
-          />
+
         </Player>
       </section>
     </>
